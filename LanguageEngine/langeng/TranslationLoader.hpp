@@ -6,8 +6,8 @@
 #include <algorithm>
 #include <rapidjson/document.h>
 #include <rapidjson/pointer.h>
+#include "EngConfig.hpp"
 
-#define LANGENG_USE_EXCEPTION
 #define LANGENG_VALIDATOR_ARGS const langeng::TranslationLoader::DocumentType& document, const std::string& fileName
 
 namespace langeng

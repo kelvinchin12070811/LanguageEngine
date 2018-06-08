@@ -23,6 +23,7 @@
     <ClCompile Include="texttools\TextTools.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="langeng\EngConfig.hpp" />
     <ClInclude Include="langeng\TranslationLoader.hpp" />
     <ClInclude Include="texttools\TextTools.hpp" />
   </ItemGroup>
