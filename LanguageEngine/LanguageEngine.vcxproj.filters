@@ -32,5 +32,11 @@
     <ClInclude Include="langeng\EngConfig.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="langeng\Translator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="langeng\Translate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -24,7 +24,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="langeng\EngConfig.hpp" />
+    <ClInclude Include="langeng\Translate.hpp" />
     <ClInclude Include="langeng\TranslationLoader.hpp" />
+    <ClInclude Include="langeng\Translator.hpp" />
     <ClInclude Include="texttools\TextTools.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -82,6 +84,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SDK_HOME)\boost_1_67_0;$(SDK_HOME)\rapidjson\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -89,6 +92,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SDK_HOME)\boost_1_67_0;$(SDK_HOME)\rapidjson\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
