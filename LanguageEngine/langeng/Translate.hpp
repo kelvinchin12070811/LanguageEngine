@@ -21,6 +21,12 @@ namespace langeng
 			};
 		}
 
+		template <typename StrAssignFn, typename Instance>
+		Translate(const std::string& id, StrAssignFn p, Instance* i):
+			id(id), target(std::bind(p, i, std::placeholders::_1))
+		{
+		}
+
 		void translateTarget(const TranslationLoader& loader) const
 		{
 			target(loader.getTranslatedText(id));

@@ -15,18 +15,33 @@ void validator(LANGENG_VALIDATOR_ARGS)
 	if (static_cast<string>(var.GetString()) != "CC50") throw std::runtime_error(error);
 }
 
+class test
+{
+public:
+	void setText(const std::string& str)
+	{
+		this->str = str;
+	}
+
+	std::string str = "lang not loaded";
+};
+
 int main()
 {
 	try
 	{
 		std::string title;
+		test subject;
 		Cout() << "Translation file: en_gb.json" << endl;
-		langeng::Translator translator(std::make_unique<langeng::TranslationLoader>("en_gb.json", &validator), 
+		langeng::Translator translator(std::make_unique<langeng::TranslationLoader>("en_gb.json", &validator),
 			{
-				langeng::Translate("lang.window.title", title)
+				langeng::Translate("lang.window.title", title),
+				langeng::Translate("lang.window.tooltip", &test::setText, &subject)
 			}
 		);
+
 		Cout() << title << endl;
+		Cout() << subject.str << endl;
 		while (true)
 		{
 			std::string file;
@@ -38,6 +53,7 @@ int main()
 			translator.retranslate();
 
 			Cout() << title << endl;
+			Cout() << subject.str << endl;
 		}
 	}
 	catch (const std::exception& e)

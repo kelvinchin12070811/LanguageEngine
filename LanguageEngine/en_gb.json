@@ -2,7 +2,8 @@
     "lang": {
         "magic": "CC50",
         "window": {
-            "title":  "Test Title"
+            "title":  "Test Title",
+            "tooltip": "Test Tooltip"
         }
     }
 }

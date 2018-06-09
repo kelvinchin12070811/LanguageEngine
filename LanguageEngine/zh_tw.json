@@ -2,7 +2,8 @@
     "lang": {
         "magic": "CC50",
         "window": {
-            "title":  "測試標題"
+            "title":  "測試標題",
+            "tooltip": "測試工具提示"
         }
     }
 }
