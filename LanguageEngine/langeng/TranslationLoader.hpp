@@ -81,11 +81,16 @@ namespace langeng
 
 			auto result = rapidjson::Pointer(path.c_str()).Get(document);
 			if (result == nullptr)
+#ifdef LANGENG_USE_DEFAULT_ACTION
+				return id;
+#else
 #ifdef LANGENG_USE_EXCEPTION
 				throw std::runtime_error("Cannot find transtation with id: \"" + id + "\"");
 #else
 				return "";
-#endif // LANGENG_USE_EXCEPTION
+#endif // LANGENG_USE_EXCEPTION  
+#endif // LANGENG_USE_DEFAULT_ACTION
+
 			
 			return result->GetString();
 		}

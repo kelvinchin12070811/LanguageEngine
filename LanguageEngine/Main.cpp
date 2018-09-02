@@ -30,6 +30,8 @@ int main()
 {
 	try
 	{
+		Cout() << "enigne version " << LANGENG_VERSION::toString() << std::endl;
+
 		std::string title;
 		test subject;
 		Cout() << "Translation file: en_gb.json" << endl;

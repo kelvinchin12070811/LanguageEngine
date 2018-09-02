@@ -14,6 +14,12 @@ namespace langeng
 			retranslate();
 		}
 
+		Translator(std::shared_ptr<TranslationLoader>&& loader, std::vector<Translate>&& target) :
+			loader(std::move(loader)), translateTargets(std::move(target))
+		{
+			retranslate();
+		}
+
 		void retranslate() const
 		{
 			for (auto& itr : translateTargets)
@@ -24,6 +30,11 @@ namespace langeng
 		{
 			if (this->loader != loader)
 				this->loader = loader;
+		}
+
+		void installTranslationLoader(std::shared_ptr<TranslationLoader>&& loader)
+		{
+			this->loader = std::move(loader);
 		}
 
 		std::shared_ptr<TranslationLoader> getTranslationLoader() const
