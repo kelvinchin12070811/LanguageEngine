@@ -1,6 +1,6 @@
 # Precompile Configuration
 
-Configs that chang how this library will be compiled.
+Configs that change how this library will be compiled.
 
 |Header|
 |:---:|
