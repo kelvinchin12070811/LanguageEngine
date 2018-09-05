@@ -1,4 +1,9 @@
 #pragma once
+
+/*! \mainpage Language Engine
+	Language Engine is translation library
+*/
+
 #include <cstdint>
 #include <string>
 
