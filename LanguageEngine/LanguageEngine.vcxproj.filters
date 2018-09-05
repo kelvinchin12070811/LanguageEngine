@@ -38,5 +38,14 @@
     <ClInclude Include="langeng\Translate.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="langeng\__doxygen__\page\StringPath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="langeng\__doxygen__\DefGroup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="langeng\__doxygen__\page\Mainpage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

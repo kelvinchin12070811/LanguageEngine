@@ -27,6 +27,9 @@
     <ClInclude Include="langeng\Translate.hpp" />
     <ClInclude Include="langeng\TranslationLoader.hpp" />
     <ClInclude Include="langeng\Translator.hpp" />
+    <ClInclude Include="langeng\__doxygen__\DefGroup.hpp" />
+    <ClInclude Include="langeng\__doxygen__\page\Mainpage.hpp" />
+    <ClInclude Include="langeng\__doxygen__\page\StringPath.hpp" />
     <ClInclude Include="texttools\TextTools.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
